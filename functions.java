@@ -7,12 +7,17 @@ public class functions {
 
    public static void printFactorial(int n){
     int factorial = 1;
-    for(int i = n; i>=1; i--){
+    if(n<0){
+        System.out.println("Invalid");
+        return;
+    }
+    else {for(int i = n; i>=1; i--){
         factorial = factorial*i;
     }
     System.out.println(factorial);
     return;
    }
+}
            
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
