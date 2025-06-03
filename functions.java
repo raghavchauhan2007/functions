@@ -1,29 +1,16 @@
 import java.util.*;
-public class functions {
-   public static int calculateProduct(int a, int b){
-    
-    return a*b;
-   }
 
-   public static void printFactorial(int n){
-    int factorial = 1;
-    if(n<0){
-        System.out.println("Invalid");
-        return;
+public class functions {
+
+    public static int average(int a, int b, int c){
+        return(a+b+c)/3;
     }
-    else {for(int i = n; i>=1; i--){
-        factorial = factorial*i;
-    }
-    System.out.println(factorial);
-    return;
-   }
-}
-           
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        printFactorial(n);
-        
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        System.out.println(average(a, b, c));
     }
-    
 }
