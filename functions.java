@@ -1,22 +1,14 @@
 import java.util.*;
 
 public class functions {
-    public static int greatestNumber(int a , int b){
-        if(a>b){
-            return a;
-        }
-        else{
-            return b;
-        }
-        
+    public static double circumference(int r){
+        return Math.PI*2*r;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        System.out.println(greatestNumber(a, b));
+        int r = sc.nextInt();
+        System.out.println(circumference(r));
     }
 
 }
